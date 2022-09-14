@@ -1,0 +1,56 @@
+<div id="back" fxFlex fxLayout="column">
+    <div fxFlex fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="0px">
+        <div class="akta" fxFlex fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="70px">
+            <div id="title">Adataim</div>
+
+            <!--<div  fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="180px">
+                <form>
+                <div xFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+                    <div id="profileImg"><img id="profileImg" [src]="loadedImage"/></div>
+                    <div xFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
+                    <input  type="file" (change)="upload($event)">
+                    
+                    </div>
+                </div>  
+                </form>
+            </div>  -->
+
+            <form [formGroup]="userdataUpdateForm" (ngSubmit)="updateDatas()">
+                <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
+                    <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="0px grid">
+                        <div>
+                            <label for="lastname">Vezetéknév*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.name?.lastname"
+                                formControlName="lastname"><br>
+                            <label for="firstname">Keresztnév*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.name?.firstname"
+                                formControlName="firstname"><br>
+                            <label for="username">Felhasználónév*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.username"
+                                formControlName="username"><br>
+                            <label for="mobileNumber">Telefonszám*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.mobileNumber"
+                                formControlName="mobileNumber"><br>
+                        </div>
+
+                        <div>
+                            <label for="postalCode">Irányitószám*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.postalCode"formControlName="postalCode"><br>
+                            <label for="city">Város*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.city" formControlName="city"><br>
+                            <label for="street">Utca*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.street" formControlName="street"><br>
+                            <label for="houseNumber">Ház/lakásszám*</label><br>
+                            <input matInput type="text" [value]="this.userTemp?.houseNumber"
+                                formControlName="houseNumber"><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="button" type="submit">Módosítások mentése</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

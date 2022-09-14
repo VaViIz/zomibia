@@ -1,0 +1,212 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+// elso szurke resz
+.first {
+    background-color: $basic-grey;
+    width: 100%;
+    padding: 80px 50px 80px 50px;
+    border-radius: 5rem 5rem 0 0;
+}
+
+
+
+@media only screen and (max-width: 1040px) {
+    .first {
+        padding: 10px 20px 40px 20px;
+    }
+}
+
+
+#zombi1Img {
+    height: 450px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1040px) {
+    #zombi1Img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #zombi1Img {
+        height: 350px;
+    }
+}
+
+
+
+#indexText {
+    width: 700px;
+    padding: 0 20px 0 20px;
+    text-align: justify;
+    color: $text-green;
+    font-family: $basic-font-family;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1240px) {
+    #indexText {
+        width: 85vw;
+    }
+}
+
+#cim1 {
+    color: $text-green;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    letter-spacing: 0.1px;
+}
+
+@media only screen and (max-width: 600px) {
+    #cim1 {
+        font-size: 30px;
+    }
+}
+
+.termekDoboz {
+    width: 280px;
+    height: 390px;
+    background-color: $basic-grey;
+    margin: 5px;
+    border-radius: 2rem;
+}
+
+#vmi {
+    width: vw;
+}
+
+#cim2 {
+    color: $basic-grey;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    text-align: center;
+    font-size: 42px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 2px $basic-grey;
+    padding-bottom: 100px;
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+    #cim2 {
+        font-size: 38px;
+    }
+}
+
+.but {
+    width: 230px;
+    height: 40px;
+    background-color: $basic-green;
+    border-radius: 2rem;
+    color: $basic-grey;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 18px;
+    border-color: $basic-grey;
+}
+
+.but:active {
+    transform: scale(0.98);
+}
+
+.termekImg {
+    height: 200px;
+    width: 200px;
+    background-color: $text-green;
+    border-radius: 2rem;
+    border: $basic-green solid 3px;
+}
+
+h1 {
+    font-family: $basic-font-family;
+    font-weight: bold;
+    color: $text-green;
+    font-size: 26px;
+}
+
+
+.velemenyImg {
+    background-color: #C89498;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .velemenyImg {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .velemenyImg {
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+    }
+}
+
+.velemenyImgDiv {
+    background-color: #C89498;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding-left: 60px;
+}
+
+.velemenyText {
+    width: 420px;
+    font-family: $basic-font-family;
+    color: $text-green;
+    font-size: 18px;
+    padding-right: 40px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .velemenyText {
+        width: 400px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .velemenyText {
+        width: 200px;
+        padding-right: 20px;
+    }
+}
+
+#cim3 {
+    color: $text-green;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    letter-spacing: 0.1px;
+}
+
+#termekdiv {
+    padding-bottom: 140px;
+    width: 100%;
+}

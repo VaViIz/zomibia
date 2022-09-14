@@ -1,0 +1,19 @@
+<div id="back" fxFlex fxLayout="column">
+    <div class="first" fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="0px grid">
+        <!--<label for="emailR"></label>
+        <input matInput type="text" formControlName="emailR">-->
+        <div *ngFor="let kep of kepek2;  let i = index">
+
+            <mat-card fxFlex fxLayout="column" fxLayoutAlign="center center ">
+                <h1>{{kep[0].name}}</h1>
+
+                <img [src]="kep[1]" />
+                <span>{{kep[0].price}} Ft</span>
+                <mat-card-actions>
+                    <button class="but" (click)='addToCart(kep[0])'>Kosárba</button>
+
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+$basic-font-family: 'Arial';
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+#grey {
+    background-color: $basic-grey;
+    border-radius: 5rem 5rem 0 0;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    min-height: 70vh;
+}
+
+.full {
+    height: 400px;
+    width: 400px;
+    border: $basic-green 8px solid;
+    border-radius: 3rem 3rem 0 0;
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+    .full {
+        height: 380px;
+        width: 380px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .full {
+        height: 300px;
+        width: 300px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: 20px;
+    }
+}
+
+.nev {
+    color: $basic-pink;
+    font-family: $basic-font-family;
+    font-size: 27px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nev {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+.adat {
+    color: $text-green;
+    font-family: $basic-font-family;
+    font-size: 22px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    line-height: 22px;
+    text-shadow: 5px 5px 4px black;
+    text-align: center;
+}

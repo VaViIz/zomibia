@@ -1,0 +1,15 @@
+<div id="back" fxFlex fxLayout="column" fxLayoutGap="10px">
+
+
+    <div *ngFor="let b of blogs">
+        <div class="first" fxFlex fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="25px">
+            <h1>{{b.name}}</h1>
+            <div class="des">{{b.description}}</div>
+            <div class="divsz" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between end">
+                <div><button (click)="goBlog(b.id)">Tovább a teljes bejegyzéshez</button></div>
+                <span>{{b.date}}</span>
+            </div>
+        </div>
+    </div>
+
+</div>

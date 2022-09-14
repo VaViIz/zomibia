@@ -1,0 +1,31 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <app-menu [loggedInUser]="loggedInUser" (onCloseSidenav)="onClose($event, sidenav)"></app-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div id="menu" fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav(sidenav)">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+
+      <div class="keret" fxFlex fxLayout="row" fxLayoutAlign="center" fxHide.xs>
+        <ul fxLayout="row" class="navigation-items">
+          <li><a routerLink="/index">Kezdőlap</a></li>
+          <li><a routerLink="/product">Termékek</a></li>
+          <li><a routerLink="/blog">Blog</a></li>
+          <li><a routerLink="/contact">Kapcsolat</a></li>
+          <li *ngIf="!(loggedInUser)"><a routerLink="/login">Fiók</a></li>
+          <li *ngIf="(loggedInUser)"><a routerLink="/account">Fiók</a></li>
+        </ul>
+      </div>
+    </mat-toolbar>
+
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

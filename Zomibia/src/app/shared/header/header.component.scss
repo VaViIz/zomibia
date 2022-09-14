@@ -1,0 +1,46 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+div {
+    background-color: $basic-pink;
+    height: 280px;
+    border-top: solid;
+    border-color: $basic-grey;
+    border-width: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        height: 200px;
+    }
+}
+
+span {
+    padding-top: 120px;
+    color: $basic-green;
+    font-family: $basic-font-family;
+    font-size: 150px;
+    text-shadow: 10px 8px 4px $basic-grey;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 680px) {
+    span {
+        font-size: 130px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    span {
+        font-size: 88px;
+        padding-top: 80px;
+    }
+}

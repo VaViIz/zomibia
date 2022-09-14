@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "zomibia": {
+      "hosting": {
+        "Zomibia": [
+          "zomibia"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "zomibia"
+  }
+}

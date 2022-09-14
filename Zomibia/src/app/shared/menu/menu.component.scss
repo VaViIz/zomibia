@@ -1,0 +1,21 @@
+$basic-green : #8BB569;
+$basis-pink : #F49A9C;
+$basic-grey: #333333;
+$basic-font-family: 'Arial';
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $basic-grey;
+    font-family: $basic-font-family;
+    padding-top: 6px;
+}
+
+span {
+    font-size: 22px;
+}
+
+a:hover {
+    color: $basis-pink;
+}

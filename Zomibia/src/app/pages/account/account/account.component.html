@@ -1,0 +1,10 @@
+<app-menu2 (selectedPage)="changePage($event)"></app-menu2>
+<ng-template [ngIf] = 'page === "user"'>
+    <app-user></app-user>
+</ng-template>
+<ng-template [ngIf] = 'page === "cart"'>
+    <app-cart ></app-cart>
+</ng-template>
+<!--<ng-template [ngIf] = 'page === "orders"'>
+    <app-orders></app-orders>
+</ng-template>-->

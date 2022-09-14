@@ -1,0 +1,98 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+.akta {
+    background-color: $basic-grey;
+    border: $basic-green 0.5vw solid;
+    border-radius: 0 5rem 0 0;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    .akta {
+        padding: 40px 20px 80px 20px;
+        border-radius: 0;
+    }
+}
+
+#profileImg {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    border: 7px solid $basic-green;
+}
+
+#title {
+    font-family: $basic-font-family;
+    font-weight: bold;
+    color: $text-green;
+    font-size: 35px;
+    padding: 70px 0 0 0;
+}
+
+input {
+    background-color: $basic-green;
+    border-radius: 5rem;
+    height: 35px;
+    width: 300px;
+    padding: 3px 15px 3px 15px;
+    color: $basic-grey;
+    font-family: $basic-font-family;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px 60px 20px 60px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#buttonImg {
+    width: 150px;
+    height: 43px;
+    background-color: $basic-pink;
+    border-radius: 5rem;
+    font-weight: bold;
+    color: $basic-grey;
+    font-family: $basic-font-family;
+    font-size: 17px;
+    border-color: $basic-grey;
+}
+
+#buttonImg:active {
+    transform: scale(0.98);
+}
+
+label {
+    font-family: $basic-font-family;
+    color: $text-green;
+    font-size: 20px;
+    margin: 0 60px 40px 60px;
+}
+
+#button {
+    width: 330px;
+    height: 41px;
+    background-color: $basic-pink;
+    border-radius: 5rem;
+    font-weight: bold;
+    color: $basic-grey;
+    font-family: $basic-font-family;
+    font-size: 18px;
+    border-color: $basic-grey;
+}
+
+#button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,125 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+#grey {
+    width: 100%;
+    border-width: 0;
+    margin-bottom: 30px;
+}
+
+#gomb {
+    border-radius: 5rem 0 0 0;
+    height: 60px;
+    width: 210px;
+    text-decoration: none;
+    border-top: $basic-green 0.5vw solid;
+    border-left: $basic-green 0.5vw solid;
+    border-right: $basic-green 0.25vw solid;
+    font-size: 20px;
+    font-family: $basic-font-family;
+    font-weight: bold;
+    background-color: $basic-grey;
+    color: $basic-pink;
+    cursor: pointer;
+    outline: none;
+}
+
+@media only screen and (max-width: 720px) {
+    #gomb {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #gomb {
+        width: 49vw;
+    }
+}
+
+#gomb:active {
+    transform: scale(0.98);
+}
+
+#gomb3 {
+    border-radius: 0 5rem 0 0;
+    height: 60px;
+    width: 210px;
+    text-decoration: none;
+    border: none;
+    border-top: $basic-green 0.5vw solid;
+    border-left: $basic-green 0.25vw solid;
+    border-right: $basic-green 0.5vw solid;
+    font-size: 20px;
+    font-family: $basic-font-family;
+    font-weight: bold;
+    background-color: $basic-grey;
+    color: $basic-pink;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+@media only screen and (max-width: 720px) {
+    #gomb3 {
+        width: 180px;
+    }
+}
+
+#gomb2 {
+    border-radius: 0 0 0 0;
+    height: 60px;
+    width: 200px;
+    text-decoration: none;
+    border: none;
+    border-top: $basic-green 0.5vw solid;
+    border-left: $basic-green 0.25vw solid;
+    border-right: $basic-green 0.25vw solid;
+    font-size: 20px;
+    font-family: $basic-font-family;
+    font-weight: bold;
+    background-color: $basic-grey;
+    color: $basic-pink;
+    margin-bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+@media only screen and (max-width: 720px) {
+    #gomb2 {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #gomb2 {
+        width: 49vw;
+        border-radius: 0 5rem 0 0;
+
+    }
+}
+
+.akta {
+    background-color: $basic-grey;
+    border-left: $basic-green 0.5vw solid;
+    border-right: $basic-green 0.5vw solid;
+    border-top: $basic-green 0.5vw solid;
+    border-radius: 0 5rem 0 0;
+    width: 100%;
+    height: 90vh;
+    padding: 200px 0 300px 0;
+}
+
+#gomb2:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 0px 1px rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,102 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+#grey {
+    background-color: $basic-grey;
+    border-radius: 5rem 5rem 0 0;
+    width: 100%;
+    padding: 100px 40px 100px 40px;
+    min-height: 70vh;
+}
+
+@media only screen and (max-width: 600px) {
+    #grey {
+        padding: 50px 30px 50px 30px;
+    }
+}
+
+#title {
+    color: $basic-pink;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 45px;
+    letter-spacing: 0.1px;
+
+    line-height: 50px;
+    text-shadow: 5px 5px 4px black;
+}
+
+.alcim {
+    color: $basic-pink;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 35px;
+    line-height: 40px;
+    text-shadow: 5px 5px 4px black;
+    padding-bottom: 10px;
+}
+
+span {
+    color: $basic-pink;
+    font-family: $basic-font-family;
+    font-size: 25px;
+    line-height: 25px;
+    text-shadow: 5px 5px 4px black;
+}
+
+.szovegTomb {
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.cikk {
+    color: $text-green;
+    font-family: $basic-font-family;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+#Img7 {
+    float: right;
+    height: 300px;
+    padding-left: 50px;
+}
+
+#cikk5 {
+    float: right;
+}
+
+#ImgVadon {
+    float: right;
+    height: 310px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: solid 4px $basic-green;
+    border-radius: 1rem;
+}
+
+#ImgWar {
+    float: left;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+}
+
+#ImgAgy {
+    float: left;
+    height: 360px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border: solid 4px $basic-green;
+    border-radius: 1rem;
+}

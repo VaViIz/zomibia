@@ -1,0 +1,76 @@
+<div id="back" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0px">
+    <div class="first" fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="0px grid">
+        <div><img id="zombi1Img" [src]="kep" alt="vmi"></div>
+        <div>
+            <div id="cim1" fxLayoutAlign="center start">Kik vagyunk mi?</div>
+            <div id="indexText">
+                Egy csodálatos és támogató közösséghez szeretnél tartozni? Be szeretnél szerezni minden szükséges
+                felszerelést időben a jövőben bekövetkező zombi apokalipszisre? Új és érdekes információkat szeretnél
+                meg tudni a zombikkal kapcsolatban? Esetleg szívesen segítenél a témában még újonc társaidnak? Vagy
+                éppen te vagy az a zöldfülű, akinek útmutatásra lenne szüksége? Ha bármelyik kérdésre is igennel
+                válaszoltál, akkor a legjobb helyen jársz éppen és azt hiszem azt is kapizsgálod már, hogy kik is
+                lennénk mi. Azért hoztuk létre ezt az oldalt, mert személyes ügyünknek tekintjük, hogy a lehető legtöbb
+                embert sikeresen felkészítsünk erre az elkerülhetetlen katasztrófára ami vár ránk és reméljük, hogy Te
+                leszel a következő aki csatlakozik ehhez a küldetéshez.
+            </div>
+        </div>
+    </div>
+
+    <div id="termekdiv" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0">
+        <span id="cim2">Áruházunk legnépszerűbb termékei</span>
+        <div id="vmi" fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="0px grid">
+            <div *ngFor="let termek of termekKep">
+                <div class="termekDoboz" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+                    <h1 class="termekNev">{{termek[0].name}}</h1>
+                    <img class="termekImg" [src]="termek[1]" alt="vmi">
+                    <button class="but" (click)="navigacio()" type="submit">Tovább a termékekhez </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="first" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+        <span id="cim3">Vélemények</span>
+        <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="">
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px ">
+                <div class="velemenyImg"></div>
+                <div class="velemenyText">Boldog vagyok, hogy rajtam kívül más is
+                    foglalkozik ezzel a problémával. Minden
+                    tiszteltem az oldal készítőinek, akik az
+                    idejüket nem kímélve próbálnak segíteni
+                    rajtunk. Ezer hála!!!
+                </div>
+            </div>
+
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+                <div class="velemenyImg"></div>
+                <div class="velemenyText">Ennek az oldalnak köszönhetem, hogy mára már megfelelő tudással és
+                    felszereléssel rendelkezem és emiatt nem kell többet félnem a jövőtől.
+                </div>
+            </div>
+
+        </div>
+        <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="">
+
+
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+                <div class="velemenyImg"></div>
+                <div class="velemenyText">A termékeke szuperek. A szállítás gyors volt. A blogon olvasható cikkek
+                    érdekesek. Összeségben meg vagyok elégedve ezzel az oldallal.
+
+                </div>
+            </div>
+
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+                <div class="velemenyImg"></div>
+                <div class="velemenyText">Őszintén voltak fenttartásiam a termékekkel kapcsolatban, de azt kell mondjam
+                    felesleges volt aggódnom, hiszen minden terméknek páratlan a minősége. Biztos vagyok benne, hogy
+                    fogok még rendelni innen a jövőben.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

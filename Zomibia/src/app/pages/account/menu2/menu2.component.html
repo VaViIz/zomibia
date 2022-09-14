@@ -1,0 +1,14 @@
+<div id="back" fxFlex fxLayout="column">
+    <div fxFlex fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="0px">
+        <div fxFlex fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="5px">
+            <button (click)="menuSwitch('user')" id="gomb" type="submit">Adataim</button>
+            <button (click)="menuSwitch('cart')" id="gomb2" type="submit">Kosár</button>
+            <!--<button (click)="menuSwitch('orders')" id="gomb2" type="submit" >Rendeléseim</button>-->
+            <div fxHide.xs>
+                <button (click)="logout()" id="gomb3" type="submit">Kijelentkezés</button>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+
+#back {
+    background-color: $basic-pink;
+    width: 100%;
+}
+
+#grey {
+    background-color: $basic-grey;
+    border-radius: 5rem 5rem 0 0;
+    width: 100%;
+    padding: 100px 20px 100px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #grey {
+        padding: 80px 20px 80px 20px;
+    }
+}
+
+
+#title {
+    color: $basic-pink;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 45px;
+    letter-spacing: 0.1px;
+    line-height: 50px;
+    text-shadow: 5px 5px 4px black;
+}
+
+
+
+.alcim {
+    color: $basic-pink;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 5px 5px 4px black;
+    padding-bottom: 10px;
+}
+
+.szovegTomb {
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.cikk {
+    color: $text-green;
+    font-family: $basic-font-family;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+
+#Img1 {
+    float: left;
+    height: 299px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: #709874 solid 3px;
+    border-radius: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #Img1 {
+        height: 180px;
+        margin-right: 0px;
+    }
+}
+
+
+#Img2 {
+    float: right;
+    height: 330px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: #709874 solid 3px;
+    border-radius: 1rem;
+}
+
+#Img3 {
+    float: left;
+    height: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: #709874 solid 3px;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #Img3 {
+        height: 190px;
+        margin-right: 0px;
+    }
+}
+
+
+#Img4 {
+    float: right;
+    height: 240px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: #709874 solid 3px;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #Img4 {
+        height: 190px;
+        margin-left: 0px;
+    }
+}
+
+#Img6 {
+    height: 260px;
+    float: left;
+    border: #709874 solid 3px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #Img6 {
+        height: 180px;
+        margin-right: 0px;
+    }
+}

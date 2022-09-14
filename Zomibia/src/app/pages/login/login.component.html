@@ -1,0 +1,37 @@
+<div id="back">
+    <div id="grey" fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="0px grid">
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center " fxLayoutGap="8px">
+            <h1>Bejelentkezés</h1>
+
+            <label for="emailB"></label>
+            <input class="bi" matInput type="text" placeholder="Email" [formControl]="emailB">
+            <label for="passwordB"></label>
+            <input matInput type="password" placeholder="Jelszó" [formControl]="passwordB">
+            <button class="button" (click)="login()">Bejelentkezés</button>
+
+
+
+        </div>
+
+        <div id="vonal"></div>
+
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <h1>Regisztráció</h1>
+
+            <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                <label for="emailR"></label>
+                <input matInput type="text" placeholder="Email" formControlName="emailR"><br>
+                <label for="usernameR"></label>
+                <input matInput type="text" placeholder="Felhasználónév" formControlName="usernameR"><br>
+                <label for="passwordR"></label>
+                <input matInput type="password" placeholder="Jelszó" formControlName="passwordR"><br>
+                <label for="passwordAR"></label>
+                <input matInput type="password" placeholder="Jelszó újra" formControlName="passwordAR"><br>
+
+                <button class="button" type="submit">Regisztráció</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>

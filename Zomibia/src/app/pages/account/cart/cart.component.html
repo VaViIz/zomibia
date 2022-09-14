@@ -1,0 +1,36 @@
+<div id="back" fxFlex fxLayout="column">
+    <div fxFlex fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="0px">
+        <div class="akta" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="70px"
+            [ngStyle]="{'min-height' : prodLen == 0 ? '70vh' : ''}">
+            <div id="emptyDiv" *ngIf="prodLen == 0">
+                <span id="empty">Nincs egy termék sem a kosaradban!</span>
+            </div>
+
+            <div *ngIf="prodLen != 0" class="tablazat" fxFlex fxLayout="column" fxLayoutAlign="center center"
+                fxLayoutGap="40px">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let termek of termekKep; let i = index;">
+                        <td> <img class="termekImg" [src]="termek[1]" alt="vmi"></td>
+                        <td>{{termek[0].name}}</td>
+                        <td>{{termek[0].price}} Ft</td>
+                        <td><button class="x" (click)="delteProduct(termek[0])">X</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td colspan="3">Összeg: {{amount}} Ft</td>
+
+                    </tr>
+                </table>
+
+                <button id="button" (click)="order()">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>

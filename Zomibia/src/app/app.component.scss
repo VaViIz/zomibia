@@ -1,0 +1,100 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+$basic-font-family: 'Arial';
+
+
+mat-toolbar {
+    background-color: $basic-green;
+}
+
+mat-icon {
+    font-weight: bold;
+    font-size: 42px;
+    color: $basic-grey;
+    text-shadow: 1px 1px 2px $basic-grey;
+    width: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $basic-pink;
+    font-size: 20px;
+    font-family: $basic-font-family;
+    padding-top: 6px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+@media only screen and (max-width: 780px) {
+    a {
+        font-size: 18px;
+    }
+}
+
+li {
+    background-color: $basic-grey;
+    min-width: 170px;
+    height: 45px;
+    outline: 0.2rem solid transparent;
+    border-radius: 3rem;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 960px) {
+    li {
+        min-width: 140px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    li {
+        min-width: 105px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+li:hover {
+    outline: 0.2rem solid $basic-pink;
+}
+
+li:active {
+    transform: scale(0.98);
+}
+
+.navigation-items {
+    background-color: #709874;
+    list-style: none;
+    padding: 0;
+}
+
+mat-sidenav {
+    min-width: 200px;
+    width: 60%;
+    max-width: 300px;
+    background-color: $basic-green;
+    border-right: solid $basic-grey 5px;
+    border-radius: 0 5rem 0 0;
+    padding-top: 20px;
+}
+
+// scrollbar elrejtése
+mat-sidenav-content {
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+mat-sidenav-content::-webkit-scrollbar {
+    display: none;
+}

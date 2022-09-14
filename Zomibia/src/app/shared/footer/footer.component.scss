@@ -1,0 +1,18 @@
+$basic-green : #709874;
+$basic-pink : #C89498;
+$basic-grey: #333333;
+$text-green: #ACC3AE;
+$basic-font-family: 'Arial';
+
+div {
+    background-color: $basic-green;
+    height: 22px;
+    border-top: solid;
+    border-color: #333333;
+    color: $basic-grey;
+    font-weight: bold;
+    font-family: $basic-font-family;
+    font-size: 30px;
+    padding: 5px;
+    z-index: 3;
+}
